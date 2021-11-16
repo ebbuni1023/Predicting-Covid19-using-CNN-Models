@@ -5,7 +5,6 @@ from flask_cors import CORS, cross_origin
 app = Flask(__name__, static_folder='covidmodels/build', static_url_path='')
 CORS(app)
 
-# for api
 @cross_origin()
 @app.route('/api', methods=['GET'])
 def index():
